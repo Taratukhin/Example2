@@ -43,7 +43,7 @@ func main() {
 		result = append(result, symbols.Symbols[i].Symbol)
 	}
 
-	// I don’t know why to transfer the card through the channel, but in the conditions of this task it says so
+	// I don’t know why to transfer the map through the channel, but in the conditions of this task it says so
 	ch := make(chan map[int]binance.SymbolPrice)
 
 	for _, symbol := range result {
